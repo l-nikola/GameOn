@@ -190,6 +190,27 @@ main {
   margin: 15px auto;
 }
 
+.validation {
+  height: 850px;
+  text-align: center;
+}
+
+.validation .modal-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.modal-body h2 {
+  margin: 361px 0 330px 0;
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 label {
   font-family: var(--font-default);
   font-size: 17px;

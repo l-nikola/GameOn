@@ -96,5 +96,12 @@ function validate() {
     isValid = false;
   }
 
-  return isValid;
+  if (isValid) {
+    document.querySelector(".bground").style.display = "none";
+
+    const confirmationModal = document.querySelector(".confirmation-modal");
+    confirmationModal.style.display = "block";
+  }
+
+  return false;
 }
