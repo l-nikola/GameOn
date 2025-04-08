@@ -52,7 +52,7 @@ function validate() {
   if (!birthdateRegex.test(birthdate.value)) {
     birthdateError.setAttribute(
       "data-error",
-      "Vous devez entrer une date valide."
+      "Vous devez entrer votre date de naissance."
     );
     birthdateError.setAttribute("data-error-visible", "true");
     isValid = false;
@@ -81,7 +81,7 @@ function validate() {
   if (!locationChecked) {
     locationWrapper.setAttribute(
       "data-error",
-      "Vous devez sélectionner une localisation."
+      "Vous devez choisir une option."
     );
     locationWrapper.setAttribute("data-error-visible", "true");
     isValid = false;
