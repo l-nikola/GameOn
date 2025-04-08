@@ -1,10 +1,16 @@
 function validate() {
   let isValid = true;
 
+  // Clear previous errors
+  const allFormData = document.querySelectorAll(".formData");
+  allFormData.forEach((formData) => {
+    formData.removeAttribute("data-error");
+    formData.removeAttribute("data-error-visible");
+  });
+
   // First Name
   const firstName = document.getElementById("first");
   const firstNameError = firstName.parentElement;
-
   if (firstName.value.trim().length < 2) {
     firstNameError.setAttribute(
       "data-error",
