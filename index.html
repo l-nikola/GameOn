@@ -47,7 +47,7 @@
 
     <!-- Home page -->
     <main>
-      <div class="hero-section">
+      <section class="hero-section">
         <div class="hero-content">
           <h1 class="hero-headline">
             Marathon national<br />
@@ -60,15 +60,14 @@
           <button class="btn-signup modal-btn">je m'inscris</button>
         </div>
         <div class="hero-img">
-          <img src="/asset/images/bg_img.jpg" alt="img" />
+          <img src="/asset/images/bg_img.jpg" alt="Image de fond du marathon" />
         </div>
-        <button class="btn-signup modal-btn">je m'inscris</button>
-      </div>
+      </section>
 
       <!-- Modal -->
-      <div class="bground">
+      <section class="bground">
         <div class="content">
-          <span class="close"></span>
+          <button class="close"></button>
           <div class="modal-body">
             <!-- Inscription form -->
             <form
@@ -230,18 +229,21 @@
             </form>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Modal confirmation -->
-      <div class="bground confirmation-modal" style="display: none">
+      <section class="bground confirmation-modal" style="display: none">
         <div class="content validation">
-          <span class="close close-confirmation"></span>
+          <button
+            class="close close-confirmation"
+            aria-label="Fermer la confirmation"
+          ></button>
           <div class="modal-body">
             <h2>Merci pour votre inscription</h2>
             <button class="btn-submit close-confirmation">Fermer</button>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->
