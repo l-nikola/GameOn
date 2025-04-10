@@ -31,9 +31,3 @@ main {
 .modal-btn:hover {
   background: #3876ac;
 }
-
-.footer {
-  margin: 20px;
-  padding: 10px;
-  font-family: var(--font-slab);
-}
