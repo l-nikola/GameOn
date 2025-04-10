@@ -1,20 +1,23 @@
 /* <!-- Header --> */
 
 header {
-  overflow: hidden;
-  margin: 3.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 52px 45px 84px 45px;
 }
 
-header nav {
-  float: right;
+header img {
+  width: 277px;
+  height: 50px;
 }
 
 header a {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
   display: block;
   padding: 12px 12px;
-  margin: 5px;
-  font-size: 20px;
-  font-family: Roboto, sans-serif;
 }
 
 header a:hover {
@@ -27,6 +30,10 @@ header a.active {
   background-color: #ff0000;
   color: #ffffff;
   border-radius: 15px;
+  margin-right: 5px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
 }
 
 header .icon {
@@ -34,6 +41,16 @@ header .icon {
 }
 
 /* <!-- Responsive Header --> */
+
+/* <!-- Laptop S --> */
+@media screen and (max-width: 1024px) {
+  header img {
+  }
+
+  header a {
+    font-size: 15px;
+  }
+}
 
 /* <!-- Tablet --> */
 @media screen and (max-width: 768px) {
