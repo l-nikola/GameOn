@@ -1,14 +1,12 @@
 footer {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  margin: 0 20px;
+  margin: 0 0 0 -40px;
 }
 
 .copyrights {
   color: var(--red);
   padding: 0;
-  font-size: 1rem;
-  margin: 60px 0 30px;
+  font-size: 17px;
+  margin: 100px 0 60px;
   font-weight: bolder;
 }
 
@@ -16,5 +14,25 @@ footer {
   .copyrights {
     margin-top: 50px;
     text-align: center;
+  }
+}
+
+/* <!-- Responsive Header --> */
+
+/* <!-- Laptop S --> */
+@media screen and (max-width: 1024px) {
+  footer {
+    margin: 0 0 0 20px;
+  }
+}
+
+/* <!-- Tablet --> */
+@media screen and (max-width: 768px) {
+  footer {
+    margin: 29px 0 20px 0;
+  }
+
+  .copyrights {
+    font-size: 15px;
   }
 }
