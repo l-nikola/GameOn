@@ -18,16 +18,16 @@ main {
 
 .modal-btn {
   font-size: 145%;
-  background: #fe142f;
+  background: var(--red);
   display: flex;
   margin: auto;
   padding: 2em;
-  color: #fff;
+  color: var(--white);
   padding: 0.75rem 2.5rem;
   border-radius: 1rem;
   cursor: pointer;
 }
 
 .modal-btn:hover {
-  background: #3876ac;
+  background: var(--blue);
 }

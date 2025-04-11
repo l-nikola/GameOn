@@ -1,8 +1,21 @@
+/* <!-- General --> */
+
 :root {
   --font-default: "DM Sans", Arial, Helvetica, sans-serif;
   --font-slab: var(--font-default);
   --modal-duration: 0.8s;
+
+  /* <!-- Colors --> */
+  --red: #fe142f;
+  --white: #ffffff;
+  --black: #000000;
+  --dark-grey: #232323;
+  --light-grey: #c4c4c4;
+  --red-error: #e54858;
+  --light-green: #279e7a;
+  --blue: #3876ac;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,6 +38,6 @@ ul {
 }
 
 a {
-  color: #000;
+  color: var(--black);
   text-decoration: none;
 }
