@@ -20,7 +20,7 @@ header a {
   padding: 12px 12px;
 }
 
-header a:hover {
+header a:not(.icon):hover {
   background-color: #ff0000;
   color: #ffffff;
   border-radius: 15px;
@@ -45,31 +45,53 @@ header .icon {
 /* <!-- Laptop S --> */
 @media screen and (max-width: 1024px) {
   header img {
+    width: 225px;
+    height: 40px;
   }
 
   header a {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
 /* <!-- Tablet --> */
 @media screen and (max-width: 768px) {
+  header {
+    align-items: flex-start;
+  }
+
   header a {
     display: none;
   }
+
+  header a.icon:hover {
+    background-color: transparent;
+  }
+
   header a.icon {
     float: right;
     display: block;
+    color: #ff0000;
+    font-size: 25px;
   }
 
   header.responsive {
     position: relative;
   }
+
   header.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
+  header.responsive ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+    margin-top: 5px;
+  }
+
   header.responsive a {
     float: none;
     display: block;
@@ -77,13 +99,33 @@ header .icon {
   }
 }
 
-@media screen and (max-width: 540px) {
-  header a {
-    display: none;
+/* <!-- Mobile --> */
+@media screen and (max-width: 425px) {
+  header {
+    margin: 33px 30px 28px 30px;
   }
+
+  header img {
+    width: 130px;
+    height: 25px;
+  }
+
   header a.icon {
-    float: right;
-    display: block;
-    margin-top: -15px;
+    font-size: 20px;
+    margin-top: -10px;
+  }
+
+  header a {
+    font-size: 15px;
+  }
+
+  header.responsive ul {
+    margin-right: 0px;
+    margin-top: 50px;
+  }
+
+  header.responsive a {
+    max-width: 120px;
+    text-align: center;
   }
 }
