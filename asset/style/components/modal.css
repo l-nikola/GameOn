@@ -106,7 +106,7 @@ input {
   display: block;
   width: 20px;
   height: 20px;
-  border: 2px solid var(--light-grey);
+  border: 2px solid var(--light-green);
   border-radius: 50%;
   text-indent: 29px;
   white-space: nowrap;
@@ -120,7 +120,7 @@ input {
   content: "";
   width: 13px;
   height: 13px;
-  background-color: var(--light-grey);
+  background-color: var(--light-green);
   border-radius: 50%;
   text-indent: 29px;
   white-space: nowrap;
@@ -139,7 +139,7 @@ input {
   opacity: 1;
 }
 .checkbox-input:checked + .checkbox2-label .checkbox-icon {
-  background: var(--light-grey);
+  background: var(--light-green);
 }
 .checkbox2-label .checkbox-icon {
   border-radius: 4px;
@@ -174,7 +174,7 @@ input {
 .close:after {
   position: absolute;
   left: 15px;
-  content: " ";
+  content: "";
   height: 33px;
   width: 3px;
   background-color: var(--white);

@@ -1,3 +1,5 @@
+/* <!-- Footer --> */
+
 footer {
   margin: 0 0 0 -40px;
 }
@@ -17,7 +19,7 @@ footer {
   }
 }
 
-/* <!-- Responsive Header --> */
+/* <!-- Responsive --> */
 
 /* <!-- Laptop S --> */
 @media screen and (max-width: 1024px) {

@@ -104,7 +104,7 @@ function validate() {
 
   if (isValid) {
     document.querySelector(".bground").style.display = "none";
-
+    document.getElementById("inscriptionForm").reset();
     const confirmationModal = document.querySelector(".confirmation-modal");
     confirmationModal.style.display = "block";
   }
