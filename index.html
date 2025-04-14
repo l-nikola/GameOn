@@ -22,8 +22,13 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <img alt="logo" src="/asset/images/Logo.png" />
+    <header id="header" class="topnav">
+      <div class="header-top">
+        <img alt="logo" src="/asset/images/Logo.png" />
+        <a href="javascript:void(0);" class="icon" onclick="editNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
       <!-- Navigation -->
       <nav>
         <ul>
@@ -41,11 +46,6 @@
           </li>
           <li>
             <a href="#"><span>Évènements passés</span></a>
-          </li>
-          <li>
-            <a href="javascript:void(0);" class="icon" onclick="editNav()">
-              <i class="fa fa-bars"></i>
-            </a>
           </li>
         </ul>
       </nav>

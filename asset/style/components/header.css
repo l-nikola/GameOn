@@ -2,9 +2,12 @@
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 52px 45px 84px 45px;
+}
+
+header nav {
+  margin-left: auto;
 }
 
 header img {
@@ -57,45 +60,35 @@ header .icon {
 /* <!-- Tablet --> */
 @media screen and (max-width: 768px) {
   header {
-    align-items: flex-start;
-  }
-
-  header a {
-    display: none;
-  }
-
-  header a.icon:hover {
-    background-color: transparent;
-  }
-
-  header a.icon {
-    float: right;
     display: block;
-    color: var(--red);
-    font-size: 25px;
   }
 
-  header.responsive {
-    position: relative;
+  .header-top {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  header.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  header nav ul {
+    display: none;
   }
 
   header.responsive ul {
     display: flex;
     flex-direction: column;
-    margin-right: 35px;
-    margin-top: 5px;
   }
 
-  header.responsive a {
-    float: none;
+  header.responsive a:not(.icon) {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--light-grey);
+    text-align: center;
+  }
+
+  header a.icon {
     display: block;
-    text-align: left;
+    font-size: 25px;
+    color: var(--red);
   }
 }
 
@@ -110,22 +103,15 @@ header .icon {
     height: 25px;
   }
 
-  header a.icon {
-    font-size: 20px;
-    margin-top: -10px;
-  }
-
   header a {
     font-size: 15px;
   }
 
-  header.responsive ul {
-    margin-right: 0px;
-    margin-top: 50px;
+  header a.icon {
+    font-size: 20px;
   }
 
   header.responsive a {
-    max-width: 120px;
-    text-align: center;
+    padding: 12px 20px;
   }
 }
