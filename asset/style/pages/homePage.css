@@ -59,11 +59,11 @@ main {
   padding: 0;
 }
 
-.hero-img {
+.homePage-img {
   grid-column: span 8;
 }
 
-.hero-img img {
+.homePage-img img {
   width: 100%;
   max-height: 657px;
   display: block;
@@ -72,6 +72,16 @@ main {
 
 .homePage > .btn-signup {
   display: none;
+}
+
+/* <!-- Responsive --> */
+
+/* <!-- Laptop S --> */
+@media screen and (max-width: 1024px) {
+  .homePage-img img {
+    width: auto;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -98,7 +108,7 @@ main {
     width: unset;
     font-size: 1.5rem;
   }
-  .hero-img img {
+  .homePage-img img {
     border-radius: 10px;
     margin-top: 40px;
   }
