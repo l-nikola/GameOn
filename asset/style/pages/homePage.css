@@ -47,7 +47,7 @@ main {
 }
 
 .homePage-content h1 {
-  font-size: 6rem;
+  font-size: 96px;
   font-weight: normal;
   white-space: nowrap;
 }
@@ -89,7 +89,7 @@ main {
   .homePage {
     display: block;
     box-shadow: unset;
-    padding-bottom: 85px;
+    padding-bottom: 90px;
   }
 
   .homePage-img img {
@@ -99,7 +99,7 @@ main {
   .homePage-content {
     background: var(--white);
     color: var(--black);
-    padding: 20px;
+    padding: 0 60px 20px 0;
   }
 
   .homePage-content::after {
@@ -114,16 +114,98 @@ main {
   }
 
   .homePage-content h1 {
-    font-size: 4.5rem;
+    font-size: 72px;
+    font-weight: 500;
   }
 
   .homePage-content p {
     width: unset;
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .homePage-img img {
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 36px;
+  }
+}
+
+/* <!-- Mobile L --> */
+@media screen and (max-width: 425px) {
+  .homePage {
+    padding-bottom: 60px;
+  }
+
+  .homePage-content h1 {
+    font-size: 40px;
+  }
+
+  .homePage-content p {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 17px;
+  }
+
+  .homePage-content .btn-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 422.5px;
+    left: 45%;
+    width: 141px;
+    height: 31px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+/* <!-- Mobile M --> */
+@media screen and (max-width: 375px) {
+  .homePage {
+    padding-bottom: 60px;
+  }
+
+  .homePage-content {
+    padding: 0 0 20px 0;
+  }
+
+  .homePage-content h1 {
+    font-size: 33px;
+  }
+
+  .homePage-content p {
+    max-width: 75%;
+  }
+
+  .homePage-img img {
+    margin-top: 10px;
+  }
+
+  .homePage-content .btn-signup {
+    margin-top: 349.5px;
+    left: 37%;
+  }
+}
+
+/* <!-- Mobile S --> */
+@media screen and (max-width: 320px) {
+  .homePage {
+    padding-bottom: 60px;
+  }
+
+  .homePage-content {
+    padding: 0 30px 20px 0;
+  }
+
+  .homePage-content h1 {
+    font-size: 27px;
+  }
+
+  .homePage-content p {
+    max-width: 70%;
+  }
+
+  .homePage-content .btn-signup {
+    margin-top: 300.5px;
+    left: 31%;
   }
 }
