@@ -61,6 +61,7 @@ header .icon {
 @media screen and (max-width: 768px) {
   header {
     display: block;
+    margin: 33px 45px 28px 45px;
   }
 
   .header-top {

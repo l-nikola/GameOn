@@ -40,9 +40,9 @@ main {
 
 .homePage-content p {
   width: 146%;
-  font-weight: normal;
   margin-top: 57px;
-  padding: 0;
+  font-size: 21px;
+  font-weight: 400;
 }
 
 .homePage-img {
