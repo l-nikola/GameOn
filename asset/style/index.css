@@ -41,3 +41,30 @@ a {
   color: var(--black);
   text-decoration: none;
 }
+
+/* <!-- Button  --> */
+.btn-submit,
+.btn-signup {
+  background: var(--red);
+  display: block;
+  margin: 0 auto;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 12px 82px;
+  color: var(--white);
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-submit:hover,
+.btn-signup:hover {
+  background: var(--blue);
+}
+
+.btn-signup {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  padding: 15px 23px;
+  margin: 0;
+  margin-top: 59px;
+}

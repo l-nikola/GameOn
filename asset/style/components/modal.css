@@ -1,19 +1,5 @@
 /* Modal form */
 
-.button {
-  background: var(--red);
-  margin-top: 0.5em;
-  padding: 1em;
-  color: var(--white);
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.button:hover {
-  background: var(--blue);
-}
-
 .bground {
   display: none;
   position: fixed;
@@ -185,31 +171,11 @@ input {
 .close:after {
   transform: rotate(-45deg);
 }
-.btn-submit,
-.btn-signup {
-  background: var(--red);
-  display: block;
-  margin: 0 auto;
-  border-radius: 7px;
-  font-size: 1rem;
-  padding: 12px 82px;
-  color: var(--white);
-  cursor: pointer;
-  border: 0;
-}
 
 /* custom select end */
 .text-label {
   font-weight: normal;
   font-size: 16px;
-}
-
-.btn-signup {
-  text-transform: capitalize;
-  font-size: 1.3rem;
-  padding: 15px 23px;
-  margin: 0;
-  margin-top: 59px;
 }
 
 @keyframes modalopen {

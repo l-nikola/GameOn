@@ -9,7 +9,7 @@ function editNav() {
 
 // DOM Elements
 const modalbg = document.querySelector(".bground");
-const modalBtn = document.querySelectorAll(".modal-btn");
+const modalBtn = document.querySelectorAll(".btn-signup");
 const formData = document.querySelectorAll(".formData");
 const closeBtn = document.querySelector(".close");
 const closeConfirmationBtns = document.querySelectorAll(".close-confirmation");
