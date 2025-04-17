@@ -22,7 +22,8 @@ closeBtn.addEventListener("click", closeModal);
 
 // launch modal form
 function launchModal() {
-  modalbg.style.display = "block";
+  const isMobile = window.matchMedia("(max-width: 425px)").matches;
+  modalbg.style.display = isMobile ? "flex" : "block";
 }
 
 // close modal form

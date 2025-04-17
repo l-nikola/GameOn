@@ -8,3 +8,21 @@
   flex-direction: column;
   height: 100%;
 }
+
+.bground {
+  display: none;
+}
+
+.modal-body {
+  padding: 15px 8%;
+  margin: 15px auto;
+}
+
+.modal-body h2 {
+  margin: 330px 0;
+  color: var(--white);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-weight: 400;
+}
