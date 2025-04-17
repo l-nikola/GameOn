@@ -8,6 +8,7 @@
   top: 0;
   height: 100%;
   width: 100%;
+  overflow: auto;
   background-color: rgba(26, 39, 156, 0.4);
 }
 
@@ -99,9 +100,9 @@ input {
 .checkbox-label .checkbox-icon,
 .checkbox2-label .checkbox-icon {
   display: block;
-  width: 24px;
-  height: 24px;
-  border: 2px solid var(--light-green);
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--light-grey);
   border-radius: 50%;
   text-indent: 29px;
   white-space: nowrap;
@@ -109,6 +110,10 @@ input {
   left: -30px;
   top: -1px;
   transition: 0.3s;
+}
+
+.checkbox-input:checked + .checkbox-label .checkbox-icon {
+  border: 1px solid var(--light-green);
 }
 
 .checkbox-label .checkbox-icon::after,
@@ -123,7 +128,7 @@ input {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-52%, -53%);
   transition: 0.3s;
   opacity: 0;
 }
@@ -143,10 +148,12 @@ input {
 
 .checkbox2-label .checkbox-icon {
   border-radius: 4px;
+  border: none;
+  background-color: var(--light-grey);
 }
 
 .checkbox2-label .checkbox-icon::after {
-  width: 7px;
+  width: 10px;
   height: 4px;
   border-radius: 2px;
   background: transparent;
@@ -155,7 +162,23 @@ input {
   border-left-color: var(--white);
   transform: rotate(-55deg);
   left: 21%;
-  top: 19%;
+  top: 22%;
+}
+
+.location {
+  margin-bottom: 12px;
+}
+
+.location label {
+  margin: 0 0 7px 36px;
+}
+
+.terms {
+  margin-bottom: 19px;
+}
+
+.terms label {
+  margin: 0 0 8px 38px;
 }
 
 .close {
