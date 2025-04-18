@@ -259,3 +259,14 @@ input {
     font-size: 12px;
   }
 }
+
+/* <!-- Mobile S --> */
+@media screen and (max-width: 320px) {
+  .location label {
+    font-size: 11px;
+  }
+
+  .terms label {
+    font-size: 11px;
+  }
+}

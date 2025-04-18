@@ -43,3 +43,10 @@
     margin: -35px auto;
   }
 }
+
+/* <!-- Mobile S --> */
+@media screen and (max-width: 320px) {
+  .validation .modal-body {
+    margin: -95px auto;
+  }
+}
