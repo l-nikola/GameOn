@@ -88,9 +88,11 @@ function validate() {
 
   // Display confirmation modal if all validations pass
   if (isValid) {
+    const isMobile = window.matchMedia("(max-width: 425px)").matches;
     document.querySelector(".bground").style.display = "none";
     document.getElementById("inscriptionForm").reset();
-    document.querySelector(".confirmation-modal").style.display = "block";
+    const confirmationModal = document.querySelector(".confirmation-modal");
+    confirmationModal.style.display = isMobile ? "flex" : "block";
   }
 
   return false;

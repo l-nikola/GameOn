@@ -26,3 +26,20 @@
   font-size: 36px;
   font-weight: 400;
 }
+
+/* <!-- Responsive --> */
+
+/* <!-- Mobile --> */
+@media screen and (max-width: 425px) {
+  .bground.confirmation-modal {
+    align-items: flex-end;
+  }
+
+  .validation {
+    margin: 0 0 -45px 0;
+  }
+
+  .validation .modal-body {
+    margin: -35px auto;
+  }
+}
